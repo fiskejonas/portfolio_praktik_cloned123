@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonas Krogh</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="ikon fixed top-0 left-0 m-5 w-16">
+        <a href="index.html"
+          ><img src="./svg/jkp.svg" alt="jkfischerproductions ikon"
+        /></a>
+      </div>
+      <nav>
+        <div class="header1 fixed text-[#bf2626]">
+          <ul class="menu">
+            <div class="menu-items flex flex-col gap-7">
+              <a class="menuItem hover:text-slate-900" href="index.html"
+                >FORSIDE</a
+              >
+
+              <a class="menuItem hover:text-slate-900" href="index.html#om_mig"
+                >OM MIG</a
+              >
+
+              <a
+                class="menuItem hover:text-slate-900"
+                href="index.html#rejsen_til_mars"
+                >REJSEN TIL MARS</a
+              >
+
+              <a
+                class="menuItem hover:text-slate-900"
+                href="index.html#videoproduktioner"
+                >VIDEOPRODUKTIONER</a
+              >
+
+              <a class="menuItem hover:text-slate-900" href="index.html#kontakt"
+                >KONTAKT</a
+              >
+            </div>
+          </ul>
+          <div class="hamburger hidden">
+            <img class="closeIcon w-10" src="./svg/window-close.svg" alt="" />
+            <img class="menuIcon w-10" src="./svg/menu.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="forside"
+        class="hero grid h-screen snap-start items-center justify-center"
+      >
+        <div class="hero_container flex">
+          <div class="tekst_container">
+            <h1>Min <br /><span class="port">Portfolio</span></h1>
+            <p class="hero_tekst">
+              En lille smagsprøve på hvad jeg kan indenfor
+              video/foto-produktion, grafisk design og webudvikling med
+              værktøjerne CSS, HTML og JavaScript.
+              <br />
+              <br />
+              Følg pilen :)
+            </p>
+          </div>
+          <div class="pil ball">
+            <img src="./svg/pil2.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="om_mig" class="om_mig grid h-screen snap-start">
+        <div class="om_mig_container">
+          <div
+            class="om_mig_tekst flex h-screen flex-col items-end justify-center"
+          >
+            <div class="border-l-8 border-l-[#bf9f63] pl-8">
+              <h2 class="text-[#0f0f26]">Jonas Krogh</h2>
+              <h3 class="pt-1 pb-4 text-2xl text-[#bf2626]">
+                Aspirerende digital designer
+              </h3>
+              <p>
+                3. semesterstuderende ved Multimediedesign på KEA. Et spændende
+                studie hvor jeg er glad for at lære desigverdenens mange
+                afskygninger at kende. Jeg er specielt glad for UI udvikling, og
+                bruger i øjeblikket meget af min tid på at dygtiggøre mig
+                indenfor dette felt. <br />
+              </p>
+              <p class="indent-5">
+                Jeg har også en stor passion for videoproduktion, og har meget
+                erfaring indenfor alt hvad det indebærer; både kameraføring,
+                klipning, colorgradeing, correction og VFX m.m.!
+                <br />
+              </p>
+              <p class="indent-5">
+                I min fritid prøver jeg så vidt muligt at få set min kæreste og
+                mine venner. Jeg spiller også en del musik med mit kære band
+                Kejser. Drømmen om at blive rockstjerne er dog efterhånden lagt
+                på hylden. Nu vil jeg hellere være designer!
+                <br />
+              </p>
+              <div class="info mt-3 flex">
+                <a
+                  class="text-lg text-blue-500 hover:text-blue-700"
+                  href="https://www.linkedin.com/in/jonas-krogh-fischer-450b2615b/"
+                  >LinkedIn</a
+                >
+                <div class="streg ml-5 mr-5">|</div>
+                <a
+                  class="text-lg text-blue-500 hover:text-blue-700"
+                  href="index.html#kontakt"
+                  >Kontakt</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="om_mig_billede relative h-screen justify-end">
+            <div class="baggrund col-start-2 grid h-screen w-full"></div>
+            <img class="absolute bottom-0" src="./img/mig_udklip.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section
+        id="rejsen_til_mars"
+        class="mars grid h-screen snap-start place-items-center overflow-x-hidden"
+      >
+        <div class="mars_wrapper">
+          <div class="mars_titel mb-10 grid grid-cols-2 gap-36">
+            <div class="mars_titel_wrapper relative flex min-w-fit flex-col">
+              <h2 class="z-20 flex pl-20 text-center">
+                Kapløbet <br />
+                til Mars
+              </h2>
+              <!-- <div
+                class="rocket_blue pulse mars_para absolute left-0 top-0.5 w-20 -rotate-12"
+              >
+                <img src="./svg/spacexraket.svg" alt="billede af blåt rumskib" />
+              </div>
+              <div
+                class="rocket_red mars_para pulse absolute top-0.5 right-0 w-10 rotate-12"
+              >
+                <img src="./svg/kina_raket.svg" alt="billede af rødt rumskib" />
+              </div> -->
+              <div class="plane mars_para fly_flyv1 absolute w-40">
+                <img src="./svg/fly.svg" alt="fly" />
+              </div>
+              <div class="plane2 mars_para fly_flyv2 absolute bottom-1.5 w-32">
+                <img src="./svg/fly2.svg" alt="fly" />
+              </div>
+              <div class="cloud mars_para pulse w-52">
+                <img src="./svg/sky_lang_stor.svg" alt="sky" />
+              </div>
+              <div class="cloud2 mars_para pulse w-24">
+                <img src="./svg/sky_lang_stor.svg" alt="sky" />
+              </div>
+              <div class="cloud3 mars_para pulse w-32">
+                <img src="./svg/sky_lang_stor.svg" alt="sky" />
+              </div>
+            </div>
+            <p class="mars_p z-30 flex max-w-md flex-col text-xl">
+              Et spil som jeg lavede for et år siden. <br />
+              Det er taget med her for at illustrere både nogle færdigheder
+              indenfor grafisk illustration, men også implementering af disse i
+              en web-sammenhæng med værktøjerne HTML, CSS og JavaScript.
+              <span>
+                <br />
+                <a
+                  class="text-lg font-bold text-orange-400 underline"
+                  href="http://jkfischerproductions.com/mars_spil/spil/index.html"
+                  >PRØV SPILLET</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="mars_spillet grid place-items-center">
+            <div class="mars_spillet_wrapper grid max-w-xl place-items-center">
+              <video width="1068" height="700" autoplay loop muted playsinline>
+                <source
+                  src="./mp4/safari1234-1.mov"
+                  type='video/mp4; codecs="hvc1"'
+                />
+                <source src="./mp4/kapløb_chrome.webm" type="video/webm" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="videoproduktioner" class="projekt_container">
+        <section class="grid h-screen snap-start place-items-center">
+          <div
+            class="tekst_og_video_container grid grid-cols-2 place-items-center"
+          >
+            <div class="h2_og_p flex flex-col items-end justify-center">
+              <h2 class="video_h2 relative">Små film</h2>
+              <p class="video_p mb-5 text-lg">
+                Herunder kan du se et udklip af nogle film-projekter jeg har
+                lavet det seneste år. Alt er filmet, redigeret og klippet af
+                mig!
+              </p>
+              <div class="pil ball absolute">
+                <img src="./svg/pil2.svg" alt="" />
+              </div>
+
+              <div class="full_length flex gap-2 self-center">
+                <p class="self-center text-slate-800">Se dem i fuld længde?</p>
+                <a
+                  href="http://jkfischerproductions.com/portfoliovideo/index.html"
+                  class="text-md w-18 group inline-flex items-center self-center border-2 border-slate-600 px-2 py-1 font-semibold text-slate-600 transition hover:bg-slate-200"
+                >
+                  Ja for faen'!
+                  <svg
+                    class="mt-0.5 ml-2 -mr-1 stroke-slate-600 stroke-2"
+                    fill="none"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      class="opacity-0 transition group-hover:opacity-100"
+                      d="M0 5h7"
+                    ></path>
+                    <path
+                      class="transition group-hover:translate-x-[3px]"
+                      d="M1 1l4 4-4 4"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <video
+              width="800"
+              height="450"
+              autoplay
+              loop
+              muted
+              playsinline
+              src="./mp4/kejser_feature_1.mp4"
+            ></video>
+          </div>
+        </section>
+
+        <section class="grid h-screen snap-start place-items-center">
+          <div
+            class="video_wrapper kejser_video relative grid grid-cols-2 items-end"
+          >
+            <div class="video_number_container overflow-hidden">
+              <video
+                width="504"
+                height="700"
+                autoplay
+                loop
+                muted
+                playsinline
+                src="./mp4/kejser_kort.mp4"
+              ></video>
+              <img
+                class="nummer1 nummer_para absolute"
+                src="./svg/nummer1.svg"
+                alt=""
+              />
+            </div>
+            <div class="ml-5 grid max-w-xs">
+              <h3 class="app text-xl" id="type"></h3>
+              <p>
+                Nicklas fra Kejser venter på at gå på scenen. Her er jeg gået
+                efter et analogt udtryk, og der er derfor bl.a. blevet tilført
+                en del analog støj i redigeringen.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="grid h-screen snap-start items-center justify-items-center"
+        >
+          <div class="video_wrapper astrid_video relative">
+            <div class="video_tekst mr-5 grid max-w-xs place-self-end">
+              <h3 class="app text-xl" id="type2"></h3>
+              <p>
+                Et videoportræt af Astrid Seeberg - en dygtig ung keramiker.
+                Stadig i redigeringsfasen.
+              </p>
+            </div>
+            <div class="video_number_container overflow-hidden">
+              <video
+                width="800"
+                height="450"
+                autoplay
+                loop
+                muted
+                playsinline
+                src="./mp4/astrid_kort.mp4"
+              ></video>
+              <img
+                class="nummer2 nummer_para absolute"
+                src="./svg/nummer2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          class="grid h-screen snap-start items-center justify-items-center"
+        >
+          <div class="video_wrapper rosetta_video relative">
+            <div class="video_number_container overflow-hidden">
+              <video
+                width="800"
+                height="450"
+                autoplay
+                loop
+                muted
+                playsinline
+                src="./mp4/rosetta_kort.mp4"
+              ></video>
+              <img
+                class="nummer3 nummer_para absolute"
+                src="./svg/nummer3.svg"
+                alt=""
+              />
+            </div>
+            <div class="video_tekst ml-5 grid max-w-xs place-self-end">
+              <h3 class="app text-xl" id="type3"></h3>
+              <p>
+                Et studieprojekt, hvor jeg i fællesskab med min gruppe, forsøgte
+                at skabe en ny visuel identitet for pizzeriaet Rosetta. Her var
+                pizzeriaets særlige forhold til nærmiljøet på Østerbro i fokus.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="grid h-screen snap-start items-center justify-items-center"
+        >
+          <div class="video_wrapper grob_video relative">
+            <div class="video_tekst mr-5 grid max-w-xs place-self-end">
+              <h3 class="app text-xl" id="type4"></h3>
+              <p>
+                Her skulle klienten Teater Grob ligeledes have en ny visuel
+                identitet som stemte overens med deres selvopfattelse.
+              </p>
+            </div>
+            <div class="video_number_container overflow-hidden">
+              <video
+                width="800"
+                height="356"
+                autoplay
+                loop
+                muted
+                playsinline
+                src="./mp4/grob_kort.mp4"
+              ></video>
+              <img
+                class="nummer4 nummer_para absolute"
+                src="./svg/nummer4.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="grid h-screen snap-start items-center justify-center">
+        <div class="hero_container flex">
+          <div class="tekst_container">
+            <h1 class="port">Det var det..</h1>
+            <h3>(der kommer snart mere)</h3>
+            <h3 class="pt-1 pb-4 text-2xl text-[#bf2626]">
+              Find kontaktinfo i footeren :)
+            </h3>
+          </div>
+          <div class="pil ball">
+            <img src="./svg/pil2.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="kontakt" class="grid h-screen snap-start">
+      <div
+        class="footer mb-5 flex w-full flex-col items-center justify-end gap-5 border-b-4 border-[#bdc5cc]"
+      >
+        <div class="text-xl font-bold text-slate-600">KONTAKT</div>
+        <div
+          class="icons mb-2 flex place-items-end gap-3 border-b-8 border-[#bf9f63] pb-3"
+        >
+          <a href="https://www.linkedin.com/in/jonas-krogh-fischer-450b2615b/"
+            ><img src="./svg/linkedin.svg" alt="linkedin ikon" /></a
+          ><a href="https://www.facebook.com/jonas.kroghfischer"
+            ><img src="./svg/facebook.svg" alt="facebook ikon" /></a
+          ><a href="tel:+4553380142"
+            ><img src="./svg/telefon.svg" alt="telefon ikon" /></a
+          ><a href="mailto:jonasfiskekrogh@hotmail.com"
+            ><img src="./svg/email.svg" alt="email ikon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
